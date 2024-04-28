@@ -1,4 +1,4 @@
-package com.game.entities;
+package com.game.quiz.entities;
 
 import java.sql.Date;
 
@@ -11,17 +11,17 @@ import jakarta.persistence.Table;
 
 @Entity 
 @Table(name="player")
-public class player{
+public class joueur {  
 @Id 
 @GeneratedValue (strategy = GenerationType.IDENTITY) 
-private int idPlayer; 
+private int idJoueur; 
 private String userName; 
 @Column(unique = true)
 private String email; 
 private String password; 
 private int score; 
 private int gold;
-public player (String userName, String email, String password, int score, int gold) {
+public joueur(String userName, String email, String password, int score, int gold) {
 	super();
 	this.userName = userName;
 	this.email = email;
@@ -29,7 +29,7 @@ public player (String userName, String email, String password, int score, int go
 	this.score = score;
 	this.gold = gold;
 }
-public player() {
+public joueur() {
 	super();
 }
 public String getUserName() {
@@ -64,7 +64,7 @@ public void setGold(int gold) {
 }
 @Override
 public String toString() {
-	return "joueur [idJoueur=" + idPlayer + ", userName=" + userName + ", email=" + email + ", password=" + password
+	return "joueur [idJoueur=" + idJoueur + ", userName=" + userName + ", email=" + email + ", password=" + password
 			+ ", score=" + score + ", gold=" + gold + "]";
 } 
 

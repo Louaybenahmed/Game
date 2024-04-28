@@ -1,4 +1,4 @@
-package com.game.entities;
+package com.game.quiz.entities;
 
 import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
