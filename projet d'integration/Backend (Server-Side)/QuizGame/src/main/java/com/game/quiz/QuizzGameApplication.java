@@ -1,13 +1,13 @@
-package com.sip.ams1;
+package com.game.quiz;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 @SpringBootApplication
-public class Ams1Application {
+public class QuizzGameApplication {
 
 	public static void main(String[] args) {
-		SpringApplication.run(Ams1Application.class, args);
+		SpringApplication.run(QuizzGameApplication.class, args);
 	}
 
 }
